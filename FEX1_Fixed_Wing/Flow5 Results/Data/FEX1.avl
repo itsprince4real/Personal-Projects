@@ -1,0 +1,87 @@
+# 
+# TODO: check consistency of area unit and length units in this file
+# TODO: check consistency with inertia units of the .mass file
+# 
+# 
+Simulation
+0.0                                 | Mach
+0     0     0.0                     | iYsym  iZsym  Zsym
+ 0.173374    0.198248         0.9   | Sref   Cref   Bref
+0.0710155   -1.55698e-17   -0.0156012   | Xref   Yref   Zref
+ 0.00                               | CDp  (optional)
+
+
+
+
+#==============================================
+#================Wing_1================
+
+#_______________________________________
+SURFACE
+Wing_1
+#Nchord    Cspace   [ Nspan Sspace ]
+13        1.0
+
+ANGLE
+    0.000                        | dAinc
+
+TRANSLATE
+    0.000        0.000         0.000
+
+YDUPLICATE
+0.0
+
+COMPONENT
+  90                         | Lcomp
+#______________
+SECTION
+   0.0000    0.0000    0.0000    0.2500    0.000    4   -2   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 0012.dat
+
+
+#______________
+SECTION
+   0.0097    0.0580    0.0008    0.2360    0.750    4    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 0012.dat
+
+
+#______________
+SECTION
+   0.0100    0.0600    0.0015    0.2360    1.500    4    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 0012_innerflap.dat
+
+CONTROL
+Flap_1  1.0   0.700    -0.0109      0.9999     0.0018   -1.0  | name, gain,  Xhinge,  XYZhvec,  SgnDup
+
+#______________
+SECTION
+   0.0700    0.3000    0.0017    0.1710    2.250    2    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 0012_outflaps.dat
+
+
+#______________
+SECTION
+   0.0710    0.3020    0.0019    0.1700    2.625    2    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 0012.dat
+
+
+
+#______________
+SECTION
+   0.1000     0.4500     0.0018     0.1400    3.000     2    0   | Xle Yle Zle   Chord Ainc   [ Nspan Sspace ]
+
+AFIL 0.0 1.0
+NACA 0012.dat
+
+
+
