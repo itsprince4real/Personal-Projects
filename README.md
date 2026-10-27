@@ -85,5 +85,5 @@ FEX1_Fixed_Wing/
 ## 📬 Contact Information
 
 **Prince**  
-M.Sc. Aerospace Engineering  
+M.Sc. Aerospace Student 
 Technical University of Munich (TUM) 
