@@ -10,7 +10,7 @@
 ## Active & Upcoming Tasks
 
 ### 1. Elevon Mixing Algorithm Development
-- Implement C++ mixing logic ($\text{Servo}_{\text{Left/Right}} = \text{Elevator}_{\text{cmd}} \pm \text{Aileron}_{\text{cmd}}$) on ESP32 microcontroller.
+- Implement C++ mixing logic on ESP32 microcontroller.
 - Map pilot control inputs to PWM servo signals.
 
 ### 2. Thrust Control & ESC Integration
