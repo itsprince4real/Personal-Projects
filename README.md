@@ -63,9 +63,7 @@ FEX1_Fixed_Wing/
    * Extracted $C_L\text{ vs. }\alpha$, $C_D\text{ vs. }\alpha$, $C_L/C_D\text{ vs. }\alpha$, and $C_M\text{ vs. }\alpha$ polar curves to determine static pitching margins and zero-lift pitching moments ($C_{M0}$).
 
 2. **Control Logic & Firmware (In Progress) 🟡:**
-   * Developing C++ elevon mixing algorithms on an **ESP32** microcontroller to translate roll ($\phi$) and pitch ($\theta$) control commands into coordinated dual-servo deflection outputs:
-     $$\text{Servo}_{\text{Left}} = \text{Elevator}_{\text{cmd}} + \text{Aileron}_{\text{cmd}}$$
-     $$\text{Servo}_{\text{Right}} = \text{Elevator}_{\text{cmd}} - \text{Aileron}_{\text{cmd}}$$
+   * Developing C++ elevon mixing algorithms on an **ESP32** microcontroller to translate roll ($\phi$) and pitch ($\theta$) control commands into coordinated dual-servo deflection outputs
    * Integrating MPU6050 IMU sensor feedback for pitch/roll rate stabilization.
 
 3. **Physical Hardware & Flight Testing (Upcoming) 🔴:**
